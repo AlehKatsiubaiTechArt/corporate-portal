@@ -1,0 +1,9 @@
+query MainPage($take: Int, $skip: Int) {
+  posts(take: $take, skip: $skip) {
+    items {
+      title
+      text
+      createdAt
+    }
+  }
+}

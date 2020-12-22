@@ -1,0 +1,43 @@
+mutation UpdateProfile(
+  $name: String,
+  $surname: String,
+  $avatar: String,
+  $city: String,
+  $birth: DateTime,
+  $position: String,
+  $education: String,
+  $cell: String,
+  $skype: String,
+  $department: String,
+  $description: String,
+  $skills: [String!],
+) {
+  updateUserProfile(
+    name: $name
+    surname: $surname
+    avatar: $avatar
+    city: $city
+    birth: $birth
+    position: $position
+    education: $education
+    cell: $cell
+    skype: $skype
+    department: $department
+    description: $description
+    skills: $skills
+  ) {
+    name
+    surname
+    avatar
+    city
+    birth
+    position
+    education
+    cell
+    skype
+    department
+    description
+    skills
+    email
+  }
+}

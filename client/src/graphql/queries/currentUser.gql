@@ -1,0 +1,17 @@
+query CurrentUser {
+  currentUser {
+    name
+    surname
+    avatar
+    city
+    birth
+    position
+    education
+    cell
+    skype
+    department
+    description
+    skills
+    email
+  }
+}
